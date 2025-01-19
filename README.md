@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+User Directory Application
+A React.js application that fetches and displays user data from an API. Users can search, paginate, and view detailed information about each user in a responsive, cleanly designed interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Features
+Technologies Used
+API Details
+Getting Started
+Prerequisites
+Installation
+Project Structure
+Usage
+Home Page
+User Detail Page
+Deployment
+Deploying to Netlify
+Deploying to Vercel
+Screenshots
+Contributing
+License
 
-## Available Scripts
+Features
+Home Page
+Displays a list of users in a grid layout.
+Search functionality to filter users by name.
+Pagination to navigate through users.
+User Detail Page
+Displays detailed information about a user, including:
+Name
+Email
+Phone
+Company
+Website
+Includes a "Go Back" button at the top-left corner for easy navigation.
+User details are centered for a clean and responsive design.
+Other Features
+Responsive Design:
+Optimized for mobile, tablet, and desktop views.
+Loading State:
+Displays a spinner during data fetching.
+Error Handling:
+Provides user-friendly messages for API errors or issues.
 
-In the project directory, you can run:
+Technologies Used
+React.js: Frontend framework for building the UI.
+React Router: For routing and navigation between pages.
+CSS: For styling, including Flexbox and Grid layouts for responsiveness.
+React Spinners: For displaying the loading spinner.
 
-### `npm start`
+API Details
+This application uses the JSONPlaceholder API for user data.
+Endpoint:https://jsonplaceholder.typicode.com/users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Data Provided:
+id: Unique identifier
+name: User's name
+email: User's email
+address: User's address (includes city, street, etc.)
+phone: User's phone number
+company: User's company details
+website: User's personal or company website
 
-### `npm test`
+Getting Started
+Prerequisites
+Make sure you have the following installed:
+Node.js: Download here
+npm: Comes with Node.js installation.
+Installation
+Clone the repository:
+git clone https://github.com/Gopichand219/user-directory
+cd user-directory
+Install dependencies: npm install
+Start the development server:npm start
+Open the application in your browser:http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project Structure
+user-directory/
+├── public/                 // Public files (HTML, favicon, etc.)
+├── src/                    // Source files
+│   ├── components/         // React components
+│   │   ├── Home.js         // Home page component
+│   │   ├── UserDetail.js   // User detail page component
+│   │   ├── Loader.js       // Loading spinner component
+│   │   ├── Pagination.js   // Pagination component
+│   ├── App.js              // Main app component
+│   ├── index.js            // React entry point
+│   ├── styles.css          // Global CSS styling
+├── package.json            // Project configuration
+├── README.md               // Project documentation
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Usage
+Home Page
+Use the search bar to filter users by name.
+Click on any user card to view detailed information.
+Use the pagination controls to navigate through the user list.
+User Detail Page
+View detailed information about the selected user.
+Use the "Go Back" button at the top-left corner to return to the home page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deployment
+Deploying to Netlify
+Build the project: npm run build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Deploy the build/ folder using Netlify's drag-and-drop interface or link your GitHub repository.
+Deploying to Vercel
+Import the project into your Vercel account.
+Configure the project settings and deploy automatically from GitHub.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Screenshots
+Home Page
+User Detail Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributing
+Contributions are welcome! Please fork this repository, make your changes, and submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
